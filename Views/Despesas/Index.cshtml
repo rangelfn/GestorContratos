@@ -1,0 +1,65 @@
+﻿@model IEnumerable<GestorContratos.Models.Despesa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Programa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fonte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Natureza)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Elemento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contrato)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Programa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Acao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fonte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Natureza)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Elemento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contrato.ContratoId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.DespesaId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.DespesaId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.DespesaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

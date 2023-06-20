@@ -1,0 +1,107 @@
+﻿@model IEnumerable<GestorContratos.Models.Contrato>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UnidadeGestora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Extrato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contratante)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contratada)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Objeto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vigencia)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcessoSei)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LinkPublico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataAssinatura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProtocoloDiof)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnidadeGestora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Extrato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contratante)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contratada)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Objeto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Vigencia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcessoSei)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LinkPublico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataAssinatura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProtocoloDiof)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ContratoId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ContratoId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ContratoId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

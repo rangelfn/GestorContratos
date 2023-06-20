@@ -1,0 +1,59 @@
+﻿@model GestorContratos.Models.Pagamento
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Pagamento</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PagamentoId" />
+            <div class="form-group">
+                <label asp-for="NotaLancamento" class="control-label"></label>
+                <input asp-for="NotaLancamento" class="form-control" />
+                <span asp-validation-for="NotaLancamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PreparacaoPagamento" class="control-label"></label>
+                <input asp-for="PreparacaoPagamento" class="form-control" />
+                <span asp-validation-for="PreparacaoPagamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OrdemBancaria" class="control-label"></label>
+                <input asp-for="OrdemBancaria" class="form-control" />
+                <span asp-validation-for="OrdemBancaria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Valor" class="control-label"></label>
+                <input asp-for="Valor" class="form-control" />
+                <span asp-validation-for="Valor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataPagamento" class="control-label"></label>
+                <input asp-for="DataPagamento" class="form-control" />
+                <span asp-validation-for="DataPagamento" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Parcela" class="control-label"></label>
+                <input asp-for="Parcela" class="form-control" />
+                <span asp-validation-for="Parcela" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
