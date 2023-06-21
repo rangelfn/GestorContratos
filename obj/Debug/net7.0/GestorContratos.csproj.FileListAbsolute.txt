@@ -253,6 +253,7 @@ C:\00Projetos\GestorContratos\GestorContratos\obj\Debug\net7.0\GestorContratos.g
 C:\00Projetos\GestorContratos\GestorContratos\obj\Debug\net7.0\ref\GestorContratos.dll
 C:\00Projetos\GestorContratos\bin\Debug\net7.0\appsettings.Development.json
 C:\00Projetos\GestorContratos\bin\Debug\net7.0\appsettings.json
+C:\00Projetos\GestorContratos\bin\Debug\net7.0\libman.json
 C:\00Projetos\GestorContratos\bin\Debug\net7.0\GestorContratos.staticwebassets.runtime.json
 C:\00Projetos\GestorContratos\bin\Debug\net7.0\GestorContratos.exe
 C:\00Projetos\GestorContratos\bin\Debug\net7.0\GestorContratos.deps.json

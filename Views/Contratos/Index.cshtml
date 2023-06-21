@@ -7,7 +7,7 @@
 <h1>Contratos</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-primary">Cadastrar</a>
+    <a asp-action="Create" class="btn btn-primary" title="Adicionar Novo"><i class="fa-regular fa-square-plus ml-2"></i> Novo</a>
 </p>
 <table class="table">
     <thead>
@@ -30,20 +30,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Vigencia)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataInicio)
-            </th>
-            <th>
+                        <th>
                 @Html.DisplayNameFor(model => model.ProcessoSei)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.LinkPublico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataAssinatura)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ProtocoloDiof)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Modalidade)
@@ -76,19 +64,7 @@
                 @Html.DisplayFor(modelItem => item.Vigencia)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.DataInicio)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.ProcessoSei)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LinkPublico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataAssinatura)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ProtocoloDiof)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Modalidade)
@@ -97,10 +73,14 @@
                 @Html.DisplayFor(modelItem => item.Valor)
             </td>
             <td>
-                    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ContratoId"><i class="bi bi-pencil-square"></i></a>
-                <a asp-action="Details" class="btn btn-info" asp-route-id="@item.ContratoId">Detalhar</a> |
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ContratoId">Apagar</a>
+                <div class="btn-group" role="group">
+                    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ContratoId" title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
+                    <a asp-action="Details" class="btn btn-success" asp-route-id="@item.ContratoId" title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a>
+                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ContratoId" title="Apagar"><i class="fas fa-trash mr-2"></i></a>
+
+                </div>
             </td>
+
         </tr>
 }
     </tbody>
