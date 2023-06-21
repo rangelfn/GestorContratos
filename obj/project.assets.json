@@ -1435,26 +1435,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Primitives": "7.0.0"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
       "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
         "type": "package",
         "dependencies": {
@@ -1781,7 +1761,7 @@
           }
         }
       },
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {
         "type": "package",
         "build": {
           "build/Microsoft.VisualStudio.Azure.Containers.Tools.Targets.props": {},
@@ -5751,33 +5731,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration/7.0.0": {
-      "sha512": "tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
-      "type": "package",
-      "path": "microsoft.extensions.configuration/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.Configuration.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.targets",
-        "lib/net462/Microsoft.Extensions.Configuration.dll",
-        "lib/net462/Microsoft.Extensions.Configuration.xml",
-        "lib/net6.0/Microsoft.Extensions.Configuration.dll",
-        "lib/net6.0/Microsoft.Extensions.Configuration.xml",
-        "lib/net7.0/Microsoft.Extensions.Configuration.dll",
-        "lib/net7.0/Microsoft.Extensions.Configuration.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.7.0.0.nupkg.sha512",
-        "microsoft.extensions.configuration.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
       "sha512": "f34u2eaqIjNO9YLHBz8rozVZ+TcFiFs0F3r7nUJd7FRkVSxk8u4OpoK226mi49MwexHOR2ibP9MFvRUaLilcQQ==",
       "type": "package",
@@ -6300,10 +6253,10 @@
         "microsoft.sqlserver.server.nuspec"
       ]
     },
-    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.18.1": {
-      "sha512": "RtNQEQQ/bgaxzrsZEkPB+/DFaUgNiq8GtZz/R4lt+mKXPcEvEuawlbl0PB1s7ND9kvkUVZtMphPxE9Ma1VGiFg==",
+    "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.17.2": {
+      "sha512": "5daNXm8Hb016oETmuHXiW8jclmRR9CzM7XrOh2htYhQ/7AAYtqntZ1MrZkh09+JTtdjYdGsy2XIMPe9cg83x5w==",
       "type": "package",
-      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.18.1",
+      "path": "microsoft.visualstudio.azure.containers.tools.targets/1.17.2",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -6332,7 +6285,7 @@
         "build/ToolsTarget.props",
         "build/ToolsTarget.targets",
         "icon.png",
-        "microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512",
+        "microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
         "microsoft.visualstudio.azure.containers.tools.targets.nuspec",
         "tools/Microsoft.VisualStudio.Containers.Tools.Common.dll",
         "tools/Microsoft.VisualStudio.Containers.Tools.Shared.dll",
@@ -11467,25 +11420,24 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.7",
-      "Microsoft.Extensions.Configuration >= 7.0.0",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.18.1",
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 7.0.7"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nepomuceno\\.nuget\\packages\\": {}
+    "C:\\Users\\75032236268\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
+      "projectUniqueName": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
       "projectName": "GestorContratos",
-      "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
-      "packagesPath": "C:\\Users\\Nepomuceno\\.nuget\\packages\\",
-      "outputPath": "C:\\00Projetos\\GestorContratos\\obj\\",
+      "projectPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
+      "packagesPath": "C:\\Users\\75032236268\\.nuget\\packages\\",
+      "outputPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nepomuceno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\75032236268\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11493,7 +11445,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11528,13 +11479,9 @@
             "target": "Package",
             "version": "[7.0.7, )"
           },
-          "Microsoft.Extensions.Configuration": {
-            "target": "Package",
-            "version": "[7.0.0, )"
-          },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
-            "version": "[1.18.1, )"
+            "version": "[1.17.2, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
@@ -11560,7 +11507,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

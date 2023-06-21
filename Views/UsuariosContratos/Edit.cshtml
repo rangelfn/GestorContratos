@@ -1,4 +1,4 @@
-﻿@model GestorContratos.Models.ContratosUsuario
+﻿@model GestorContratos.Models.UsuariosContrato
 
 @{
     ViewData["Title"] = "Edit";
@@ -6,13 +6,13 @@
 
 <h1>Edit</h1>
 
-<h4>ContratosUsuario</h4>
+<h4>UsuariosContrato</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="ContratosUsuariosId" />
+            <input type="hidden" asp-for="UsuariosContratosId" />
             <div class="form-group">
                 <label asp-for="UsuarioId" class="control-label"></label>
                 <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.UsuarioId"></select>
@@ -31,7 +31,7 @@
 </div>
 
 <div>
-            <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
 </div>
 
 @section Scripts {

@@ -1,10 +1,8 @@
 ------------------------------------------------
 --Ttrigger para bloquear gravações no DB nos FDS
 ------------------------------------------------
-
 USE GestorContratos;
 GO
-
 CREATE TRIGGER RestricaoFinaisDeSemana
 ON Contratos 
 FOR INSERT, UPDATE, DELETE
@@ -19,7 +17,6 @@ BEGIN
         RETURN
     END
 END
-
 -------------------------------------------------
 -- Trigger para salvar alterações para Auditorias
 -------------------------------------------------

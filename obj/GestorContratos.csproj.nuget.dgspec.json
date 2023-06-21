@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj": {}
+    "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj": {}
   },
   "projects": {
-    "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj": {
+    "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
+        "projectUniqueName": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
         "projectName": "GestorContratos",
-        "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
-        "packagesPath": "C:\\Users\\Nepomuceno\\.nuget\\packages\\",
-        "outputPath": "C:\\00Projetos\\GestorContratos\\obj\\",
+        "projectPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
+        "packagesPath": "C:\\Users\\75032236268\\.nuget\\packages\\",
+        "outputPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nepomuceno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\75032236268\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,13 +56,9 @@
               "target": "Package",
               "version": "[7.0.7, )"
             },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.18.1, )"
+              "version": "[1.17.2, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -89,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

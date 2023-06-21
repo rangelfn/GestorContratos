@@ -12,10 +12,10 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Modalidade)
+            @Html.DisplayNameFor(model => model.Tipo)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Modalidade)
+            @Html.DisplayFor(model => model.Tipo)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.DataCadastro)
@@ -39,7 +39,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="NotaEmpenho" />
-        <button type="submit" class="btn btn-danger" title="Apagar"> <i class="fas fa-trash mr-2"></i> </button>|
-                <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+        <button type="submit" class="btn btn-danger" title="Apagar"> <i class="fas fa-trash mr-2"></i> </button> |
+        <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
     </form>
 </div>

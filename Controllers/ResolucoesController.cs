@@ -33,16 +33,16 @@ namespace GestorContratos.Controllers
                 return NotFound();
             }
 
-            var resoluco = await _context.Resolucoes
+            var resolucao = await _context.Resolucoes
                 .Include(r => r.Pessoa)
                 .Include(r => r.Portaria)
                 .FirstOrDefaultAsync(m => m.ResolucaoId == id);
-            if (resoluco == null)
+            if (resolucao == null)
             {
                 return NotFound();
             }
 
-            return View(resoluco);
+            return View(resolucao);
         }
 
         // GET: Resolucoes/Create
@@ -58,17 +58,17 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ResolucaoId,Tipo,DataInicio,DataFim,PortariaId,PessoaId")] Resoluco resoluco)
+        public async Task<IActionResult> Create([Bind("ResolucaoId,Tipo,DataInicio,DataFim,PortariaId,PessoaId")] Resolucao resolucao)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(resoluco);
+                _context.Add(resolucao);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resoluco.PessoaId);
-            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resoluco.PortariaId);
-            return View(resoluco);
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resolucao.PessoaId);
+            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resolucao.PortariaId);
+            return View(resolucao);
         }
 
         // GET: Resolucoes/Edit/5
@@ -79,14 +79,14 @@ namespace GestorContratos.Controllers
                 return NotFound();
             }
 
-            var resoluco = await _context.Resolucoes.FindAsync(id);
-            if (resoluco == null)
+            var resolucao = await _context.Resolucoes.FindAsync(id);
+            if (resolucao == null)
             {
                 return NotFound();
             }
-            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resoluco.PessoaId);
-            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resoluco.PortariaId);
-            return View(resoluco);
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resolucao.PessoaId);
+            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resolucao.PortariaId);
+            return View(resolucao);
         }
 
         // POST: Resolucoes/Edit/5
@@ -94,9 +94,9 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ResolucaoId,Tipo,DataInicio,DataFim,PortariaId,PessoaId")] Resoluco resoluco)
+        public async Task<IActionResult> Edit(int id, [Bind("ResolucaoId,Tipo,DataInicio,DataFim,PortariaId,PessoaId")] Resolucao resolucao)
         {
-            if (id != resoluco.ResolucaoId)
+            if (id != resolucao.ResolucaoId)
             {
                 return NotFound();
             }
@@ -105,12 +105,12 @@ namespace GestorContratos.Controllers
             {
                 try
                 {
-                    _context.Update(resoluco);
+                    _context.Update(resolucao);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ResolucoExists(resoluco.ResolucaoId))
+                    if (!ResolucaoExists(resolucao.ResolucaoId))
                     {
                         return NotFound();
                     }
@@ -121,9 +121,9 @@ namespace GestorContratos.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resoluco.PessoaId);
-            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resoluco.PortariaId);
-            return View(resoluco);
+            ViewData["PessoaId"] = new SelectList(_context.Pessoas, "PessoaId", "PessoaId", resolucao.PessoaId);
+            ViewData["PortariaId"] = new SelectList(_context.Portarias, "PortariaId", "PortariaId", resolucao.PortariaId);
+            return View(resolucao);
         }
 
         // GET: Resolucoes/Delete/5
@@ -134,16 +134,16 @@ namespace GestorContratos.Controllers
                 return NotFound();
             }
 
-            var resoluco = await _context.Resolucoes
+            var resolucao = await _context.Resolucoes
                 .Include(r => r.Pessoa)
                 .Include(r => r.Portaria)
                 .FirstOrDefaultAsync(m => m.ResolucaoId == id);
-            if (resoluco == null)
+            if (resolucao == null)
             {
                 return NotFound();
             }
 
-            return View(resoluco);
+            return View(resolucao);
         }
 
         // POST: Resolucoes/Delete/5
@@ -155,17 +155,17 @@ namespace GestorContratos.Controllers
             {
                 return Problem("Entity set 'GestorContratosContext.Resolucoes'  is null.");
             }
-            var resoluco = await _context.Resolucoes.FindAsync(id);
-            if (resoluco != null)
+            var resolucao = await _context.Resolucoes.FindAsync(id);
+            if (resolucao != null)
             {
-                _context.Resolucoes.Remove(resoluco);
+                _context.Resolucoes.Remove(resolucao);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ResolucoExists(int id)
+        private bool ResolucaoExists(int id)
         {
           return (_context.Resolucoes?.Any(e => e.ResolucaoId == id)).GetValueOrDefault();
         }

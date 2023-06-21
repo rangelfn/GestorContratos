@@ -14,9 +14,9 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="NotaEmpenho" />
             <div class="form-group">
-                <label asp-for="Modalidade" class="control-label"></label>
-                <input asp-for="Modalidade" class="form-control" />
-                <span asp-validation-for="Modalidade" class="text-danger"></span>
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" class="form-control" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DataCadastro" class="control-label"></label>
@@ -41,7 +41,7 @@
 </div>
 
 <div>
-            <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
 </div>
 
 @section Scripts {

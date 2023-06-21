@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GestorContratos.Models.ContratosUsuario>
+﻿@model IEnumerable<GestorContratos.Models.UsuariosContrato>
 
 @{
     ViewData["Title"] = "Index";
@@ -31,9 +31,9 @@
                 @Html.DisplayFor(modelItem => item.Usuario.UsuarioId)
             </td>
             <td>
-<a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ContratosUsuariosId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a> 
-               <a asp-action="Details" class="btn btn-success"  asp-route-id="@item.ContratosUsuariosId"title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a>
-                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ContratosUsuariosId"title="Apagar"><i class="fas fa-trash mr-2"></i></a>
+                <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.UsuariosContratosId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
+                <a asp-action="Details" class="btn btn-success"  asp-route-id="@item.UsuariosContratosId"title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.UsuariosContratosId"title="Apagar"><i class="fas fa-trash mr-2"></i></a>
             </td>
         </tr>
 }

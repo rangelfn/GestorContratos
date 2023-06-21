@@ -56,7 +56,7 @@ namespace GestorContratos.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ContratoId,UnidadeGestora,Extrato,Contratante,Contratada,Objeto,Vigencia,DataInicio,ProcessoSei,LinkPublico,DataAssinatura,ProtocoloDiof,Modalidade,Valor")] Contrato contrato)
-        {    
+        {
             if (ModelState.IsValid)
             {
                 _context.Add(contrato);

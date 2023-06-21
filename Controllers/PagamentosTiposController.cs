@@ -58,7 +58,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NotaEmpenho,Modalidade,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
+        public async Task<IActionResult> Create([Bind("NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +94,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("NotaEmpenho,Modalidade,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
+        public async Task<IActionResult> Edit(int id, [Bind("NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
         {
             if (id != pagamentosTipo.NotaEmpenho)
             {

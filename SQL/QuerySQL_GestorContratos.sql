@@ -7,19 +7,19 @@ USE GestorContratos
 
 -- Criação da tabela Contratos
 CREATE TABLE Contratos (
-  ContratoID INT PRIMARY KEY,
+  ContratoID INT PRIMARY KEY IDENTITY,
   UnidadeGestora VARCHAR(255) NOT NULL,
   Extrato VARCHAR(255) NOT NULL,
   Contratante VARCHAR(255) NOT NULL,
   Contratada VARCHAR(255) NOT NULL,
-  Objeto VARCHAR(255) NOT NULL,
+  Objeto VARCHAR(4000) NOT NULL,
   Vigencia INT NOT NULL,
   DataInicio DATE NOT NULL,
   ProcessoSei VARCHAR(255) NOT NULL,
   LinkPublico VARCHAR(255) NOT NULL,
   DataAssinatura DATE NOT NULL,
   ProtocoloDiof VARCHAR(255) NOT NULL,
-  Modalidade BIT,
+  Modalidade VARCHAR(255) NOT NULL,
   Valor DECIMAL(10, 2)
 );
 
@@ -38,7 +38,7 @@ CREATE TABLE Aditivos (
   AditivoID INT PRIMARY KEY,
   Numero VARCHAR(255) NOT NULL,
   Descricao VARCHAR(255) NOT NULL,
-  DataInicio DATE,
+  DataInicio DATETIME,
   DataFim DATE,
   CHECK (DataInicio <= DataFim),
   Valor DECIMAL(10, 2) NOT NULL,
@@ -73,7 +73,7 @@ CREATE TABLE Pagamentos (
 -- Criação da tabela PagamentoTipo
 CREATE TABLE PagamentosTipo (
   NotaEmpenho INT PRIMARY KEY,
-  Modalidade BIT,
+  Tipo VARCHAR(255) NOT NULL,
   DataCadastro DATE NOT NULL,
   ContratoID INT,
   PagamentoID INT,
@@ -139,8 +139,8 @@ CREATE TABLE Usuarios (
 );
 
 -- Criação da tabela ContratosUsuarios
-CREATE TABLE ContratosUsuarios (
-  ContratosUsuariosID INT IDENTITY(1,1) PRIMARY KEY,
+CREATE TABLE UsuariosContratos (
+  UsuariosContratosID INT IDENTITY(1,1) PRIMARY KEY,
   UsuarioID INT,
   ContratoID INT,
   FOREIGN KEY (UsuarioID) REFERENCES Usuarios (UsuarioID) ON DELETE CASCADE, 

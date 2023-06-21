@@ -9,281 +9,277 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GestorContratos
 build_property.RootNamespace = GestorContratos
-build_property.ProjectDir = C:\00Projetos\GestorContratos\
+build_property.ProjectDir = E:\00Rangel\01Projetos\GestorContratos\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\00Projetos\GestorContratos
+build_property.MSBuildProjectDirectory = E:\00Rangel\01Projetos\GestorContratos
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/00Projetos/GestorContratos/Views/Aditivos/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Aditivos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpdGl2b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Aditivos/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Aditivos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpdGl2b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Aditivos/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Aditivos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpdGl2b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Aditivos/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Aditivos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpdGl2b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Aditivos/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Aditivos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRpdGl2b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Apostilamentos/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Apostilamentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvc3RpbGFtZW50b3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Apostilamentos/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Apostilamentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvc3RpbGFtZW50b3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Apostilamentos/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Apostilamentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvc3RpbGFtZW50b3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Apostilamentos/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Apostilamentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvc3RpbGFtZW50b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Apostilamentos/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Apostilamentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBvc3RpbGFtZW50b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/ContratosUsuarios/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/ContratosUsuarios/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/ContratosUsuarios/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/ContratosUsuarios/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zVXN1YXJpb3NcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/ContratosUsuarios/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zVXN1YXJpb3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/Contratos/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Contratos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Contratos/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Contratos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Contratos/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Contratos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Contratos/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Contratos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Contratos/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Contratos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJhdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Despesas/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Despesas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Despesas/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Despesas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Despesas/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Despesas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Despesas/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Despesas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Despesas/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Despesas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzcGVzYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Editais/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Editais/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFpc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Editais/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Editais/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFpc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Editais/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Editais/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFpc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Editais/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Editais/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFpc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Editais/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Editais/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRpdGFpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Home/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Home/Privacy.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW4uY3NodG1s
+[E:/00Rangel/01Projetos/GestorContratos/Views/PagamentosTipos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/PagamentosTipoes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9lc1xDcmVhdGUuY3NodG1s
+[E:/00Rangel/01Projetos/GestorContratos/Views/PagamentosTipos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/PagamentosTipoes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9lc1xEZWxldGUuY3NodG1s
+[E:/00Rangel/01Projetos/GestorContratos/Views/PagamentosTipos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/PagamentosTipoes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9lc1xEZXRhaWxzLmNzaHRtbA==
+[E:/00Rangel/01Projetos/GestorContratos/Views/PagamentosTipos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/PagamentosTipoes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9lc1xFZGl0LmNzaHRtbA==
+[E:/00Rangel/01Projetos/GestorContratos/Views/PagamentosTipos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/PagamentosTipoes/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1RpcG9lc1xJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/00Projetos/GestorContratos/Views/Pagamentos/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pagamentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pagamentos/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pagamentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pagamentos/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pagamentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pagamentos/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pagamentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pagamentos/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pagamentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnYW1lbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pessoas/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pessoas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pessoas/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pessoas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pessoas/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pessoas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pessoas/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pessoas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Pessoas/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Pessoas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Portarias/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Portarias/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFyaWFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Portarias/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Portarias/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFyaWFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Portarias/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Portarias/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFyaWFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Portarias/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Portarias/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFyaWFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Portarias/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Portarias/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGFyaWFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Resolucoes/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Resolucoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb2x1Y29lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Resolucoes/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Resolucoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb2x1Y29lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Resolucoes/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Resolucoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb2x1Y29lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Resolucoes/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Resolucoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb2x1Y29lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Resolucoes/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Resolucoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzb2x1Y29lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Shared/Error.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Usuarios/Create.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/UsuariosContratos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDb250cmF0b3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/00Rangel/01Projetos/GestorContratos/Views/UsuariosContratos/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDb250cmF0b3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/00Rangel/01Projetos/GestorContratos/Views/UsuariosContratos/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDb250cmF0b3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/00Rangel/01Projetos/GestorContratos/Views/UsuariosContratos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDb250cmF0b3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/00Rangel/01Projetos/GestorContratos/Views/UsuariosContratos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NDb250cmF0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/00Rangel/01Projetos/GestorContratos/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Usuarios/Delete.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Usuarios/Details.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Usuarios/Edit.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Usuarios/Index.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/_ViewImports.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/_ViewStart.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/00Projetos/GestorContratos/Views/Shared/_Layout.cshtml]
+[E:/00Rangel/01Projetos/GestorContratos/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-i2dmr80hb4
