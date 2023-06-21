@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UQKYdH6g6fb5+8QhGxH4VNmZbfVHY4E3lyqXPZew5duR4WG4c0LxarUKCJ8+sGORAU4gbyc8ze8c9f3Bie7wOg==",
+  "dgSpecHash": "eE9uIWNPDQCOzEjKmyfcot7t6kxF/IVXBEUulmuMMpZIfXF1DlaCEnJ4Iyzh/1xK9h5mNKfxikNN+GkJ8zLhzw==",
   "success": true,
-  "projectFilePath": "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj",
+  "projectFilePath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nepomuceno\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Nepomuceno\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

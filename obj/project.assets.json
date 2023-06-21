@@ -11478,11 +11478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj",
+      "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
       "projectName": "GestorContratos",
-      "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj",
+      "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
       "packagesPath": "C:\\Users\\Nepomuceno\\.nuget\\packages\\",
-      "outputPath": "C:\\00Projetos\\GestorContratos\\GestorContratos\\obj\\",
+      "outputPath": "C:\\00Projetos\\GestorContratos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nepomuceno\\AppData\\Roaming\\NuGet\\NuGet.Config",
