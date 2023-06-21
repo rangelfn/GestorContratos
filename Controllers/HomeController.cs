@@ -22,6 +22,26 @@ namespace GestorContratos.Controllers
         {
             return View();
         }
+        public IActionResult Contratos()
+        {
+            return RedirectToAction("Index", "Contratos");
+
+        }
+        public IActionResult Editais()
+        {
+            return RedirectToAction("Index", "Editais");
+
+        }
+        public IActionResult Apostilamentos()
+        {
+            return RedirectToAction("Index", "Apostilamentos");
+
+        }
+        public IActionResult Aditivos()
+        {
+            return RedirectToAction("Index", "Aditivos");
+
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

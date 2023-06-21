@@ -12,34 +12,15 @@
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.UnidadeGestora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Extrato)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contratante)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contratada)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Objeto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Vigencia)
-            </th>
-                        <th>
-                @Html.DisplayNameFor(model => model.ProcessoSei)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Modalidade)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Valor)
-            </th>
-            <th></th>
+            <th>Unidade Gestora</th>
+            <th>Extrato</th>
+            <th>Contratante</th>
+            <th>Contratada</th>
+            <th>Vigencia</th>
+            <th>Processo Sei</th>
+            <th>Modalidade</th>
+            <th>Valor</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -58,9 +39,6 @@
                 @Html.DisplayFor(modelItem => item.Contratada)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Objeto)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Vigencia)
             </td>
             <td>
@@ -73,12 +51,9 @@
                 @Html.DisplayFor(modelItem => item.Valor)
             </td>
             <td>
-                <div class="btn-group" role="group">
-                    <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ContratoId" title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
-                    <a asp-action="Details" class="btn btn-success" asp-route-id="@item.ContratoId" title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a>
-                    <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ContratoId" title="Apagar"><i class="fas fa-trash mr-2"></i></a>
-
-                </div>
+                <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ContratoId" title="Editar"><i class="fas fa-pen-square mr-2"></i></a> 
+                <a asp-action="Details" class="btn btn-success" asp-route-id="@item.ContratoId" title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a> 
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ContratoId" title="Apagar"><i class="fas fa-trash mr-2"></i></a>
             </td>
 
         </tr>
