@@ -11425,19 +11425,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\75032236268\\.nuget\\packages\\": {}
+    "C:\\Users\\Nepomuceno\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
+      "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
       "projectName": "GestorContratos",
-      "projectPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\GestorContratos.csproj",
-      "packagesPath": "C:\\Users\\75032236268\\.nuget\\packages\\",
-      "outputPath": "E:\\00Rangel\\01Projetos\\GestorContratos\\obj\\",
+      "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
+      "packagesPath": "C:\\Users\\Nepomuceno\\.nuget\\packages\\",
+      "outputPath": "C:\\00Projetos\\GestorContratos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\75032236268\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nepomuceno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11445,6 +11445,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11507,7 +11508,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

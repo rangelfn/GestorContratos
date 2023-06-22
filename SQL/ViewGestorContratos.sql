@@ -12,7 +12,7 @@ LEFT JOIN Editais e ON c.ContratoID = e.ContratoID;
 CREATE VIEW vwContratosPagamentos AS
 SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia,
        c.DataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade,
-       c.Valor, pt.NotaEmpenho, pt.Modalidade AS ModalidadePagamento, pt.DataCadastro,
+       c.Valor, pt.NotaEmpenho, pt.Tipo AS ModalidadePagamento, pt.DataCadastro,
        p.NotaLancamento, p.PreparacaoPagamento, p.OrdemBancaria, p.Valor AS ValorPagamento,
        p.DataPagamento, p.Parcela
 FROM Contratos c
@@ -53,6 +53,6 @@ AS
 SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia, c.DataInicio AS ContratoDataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade, c.Valor,
        p.Matricula, p.Nome, p.CPF, p.UG AS PessoaUG, p.Setor, p.DataInicio AS PessoaDataInicio, p.DataFim
 FROM Contratos c
-LEFT JOIN ContratosUsuarios cu ON c.ContratoID = cu.ContratoID
+LEFT JOIN UsuariosContratos cu ON c.ContratoID = cu.ContratoID
 LEFT JOIN Usuarios u ON cu.UsuarioID = u.UsuarioID
 LEFT JOIN Pessoas p ON u.LoginCPF = p.CPF;

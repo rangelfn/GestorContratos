@@ -23,6 +23,5 @@ public partial class VwContratosPessoa
     public string? Cpf { get; set; }
     public string? PessoaUg { get; set; }
     public string? Setor { get; set; }
-    public DateTime? PessoaDataInicio { get; set; }
-    public DateTime? DataFim { get; set; }
+
 }

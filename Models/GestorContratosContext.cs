@@ -29,7 +29,6 @@ public partial class GestorContratosContext : DbContext
     public virtual DbSet<VwContratosEditais> VwContratosEditais { get; set; }
     public virtual DbSet<VwContratosPagamento> VwContratosPagamentos { get; set; }
     public virtual DbSet<VwContratosPessoa> VwContratosPessoas { get; set; }
-    public virtual DbSet<VwContratosPortaria> VwContratosPortarias { get; set; }
     public virtual DbSet<VwContratosValorTotalPagamento> VwContratosValorTotalPagamentos { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -189,8 +188,6 @@ public partial class GestorContratosContext : DbContext
 
             entity.Property(e => e.PessoaId).ValueGeneratedNever().HasColumnName("PessoaID");
             entity.Property(e => e.Cpf).HasMaxLength(11).IsUnicode(false).HasColumnName("CPF");
-            entity.Property(e => e.DataFim).HasColumnType("date");
-            entity.Property(e => e.DataInicio).HasColumnType("date");
             entity.Property(e => e.Matricula).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Nome).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Setor).HasMaxLength(255).IsUnicode(false);
@@ -219,7 +216,6 @@ public partial class GestorContratosContext : DbContext
             entity.HasKey(e => e.ResolucaoId).HasName("PK__Resoluco__646E61B3D1DF8102");
 
             entity.Property(e => e.ResolucaoId).HasColumnName("ResolucaoID");
-            entity.Property(e => e.DataFim).HasColumnType("date");
             entity.Property(e => e.DataInicio).HasColumnType("date");
             entity.Property(e => e.PessoaId).HasColumnName("PessoaID");
             entity.Property(e => e.PortariaId).HasColumnName("PortariaID");
@@ -347,39 +343,15 @@ public partial class GestorContratosContext : DbContext
             entity.Property(e => e.ContratoId).HasColumnName("ContratoID");
             entity.Property(e => e.Cpf).HasMaxLength(11).IsUnicode(false).HasColumnName("CPF");
             entity.Property(e => e.DataAssinatura).HasColumnType("date");
-            entity.Property(e => e.DataFim).HasColumnType("date");
             entity.Property(e => e.Extrato).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.LinkPublico).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Matricula).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Nome).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Objeto).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.PessoaDataInicio).HasColumnType("date");
             entity.Property(e => e.PessoaUg).HasMaxLength(255).IsUnicode(false).HasColumnName("PessoaUG");
             entity.Property(e => e.ProcessoSei).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.ProtocoloDiof).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Setor).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.UnidadeGestora).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.Valor).HasColumnType("decimal(10, 2)");
-        });
-
-        modelBuilder.Entity<VwContratosPortaria>(entity =>
-        {
-            entity.HasNoKey().ToView("vwContratosPortarias");
-
-            entity.Property(e => e.Contratada).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.Contratante).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.ContratoId).HasColumnName("ContratoID");
-            entity.Property(e => e.DataAssinatura).HasColumnType("date");
-            entity.Property(e => e.DataInicio).HasColumnType("date");
-            entity.Property(e => e.Extrato).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.LinkPublico).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.Objeto).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.PortariaDataPublicacao).HasColumnType("date");
-            entity.Property(e => e.PortariaNumero).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.PortariaProtocolo).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.PortariaUnidadeGestora).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.ProcessoSei).HasMaxLength(255).IsUnicode(false);
-            entity.Property(e => e.ProtocoloDiof).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.UnidadeGestora).HasMaxLength(255).IsUnicode(false);
             entity.Property(e => e.Valor).HasColumnType("decimal(10, 2)");
         });

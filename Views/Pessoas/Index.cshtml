@@ -27,12 +27,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Setor)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataInicio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataFim)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -53,12 +47,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Setor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataInicio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataFim)
             </td>
             <td>
                 <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.PessoaId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a>

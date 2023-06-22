@@ -10,7 +10,5 @@ public partial class Pessoa
     public string Cpf { get; set; } = null!;
     public string Ug { get; set; } = null!;
     public string Setor { get; set; } = null!;
-    public DateTime? DataInicio { get; set; }
-    public DateTime? DataFim { get; set; }
     public virtual ICollection<Resolucao> Resolucos { get; set; } = new List<Resolucao>();
 }
