@@ -5,12 +5,14 @@
 
 - NOTA: Esse sistema foi elaborado no conceito DATA FIRST utilizando princípios Scaffolding (Engenharia Reversa) com Entity Framework, foi desenvolvido localmente com estrutura DOCKER. Antes de iniciar o projeto você deve abrir o MSSQL com SQL SEVER instalado localhost e rodar as Query scripts SQL de criação do banco de dados com suas tabelas, das views e das triggers. Após realizada essa etapa Abra o Visual Studio Code 2022 Crie um novo projeto Asp.Net Core Web APP MVC com Net 7.0 e siga o passo-a-passo.
 <br>
+
 # Passo 1: Instalar os pacotes Microsoft EF para habilitar as ferramentas de scaffolding.
 - Install-Package Microsoft.EntityFrameworkCore.SqlServer
 - Install-Package Microsoft.EntityFrameworkCore.Design
 - Install-Package Microsoft.EntityFrameworkCore.Toolsa
 - Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
 <br>
+
 # Passo 2: Configurar o arquivo appsettings.json (acrecentar as seguintes linhas)
 
 <br> "ConnectionStrings": {
