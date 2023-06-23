@@ -1,4 +1,4 @@
-using GestorContratos.Models;
+ï»¿using GestorContratos.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -6,24 +6,24 @@ using System.IO;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Carregar a configuração do arquivo appsettings.json
+// Carregar a configuraï¿½ï¿½o do arquivo appsettings.json
 builder.Configuration.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-// Configurar a string de conexão
+// Configurar a string de conexï¿½o
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
-// Adicionar o DbContext usando a string de conexão
+// Adicionar o DbContext usando a string de conexï¿½o
 builder.Services.AddDbContext<GestorContratosContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
 
-// Adicionar os serviços ao contêiner
+// Adicionar os serviï¿½os ao contï¿½iner
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configurar o pipeline de requisição HTTP
+// Configurar o pipeline de requisiï¿½ï¿½o HTTP
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");

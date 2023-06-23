@@ -13,11 +13,6 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="PortariaId" class="control-label"></label>
-                <input asp-for="PortariaId" class="form-control" />
-                <span asp-validation-for="PortariaId" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="Numero" class="control-label"></label>
                 <input asp-for="Numero" class="form-control" />
                 <span asp-validation-for="Numero" class="text-danger"></span>
@@ -31,6 +26,11 @@
                 <label asp-for="UnidadeGestora" class="control-label"></label>
                 <input asp-for="UnidadeGestora" class="form-control" />
                 <span asp-validation-for="UnidadeGestora" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tipo" class="control-label"></label>
+                <input asp-for="Tipo" class="form-control" />
+                <span asp-validation-for="Tipo" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="DataPublicacao" class="control-label"></label>
@@ -49,7 +49,7 @@
 </div>
 
 <div>
-    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

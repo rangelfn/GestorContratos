@@ -19,14 +19,19 @@
                 <span asp-validation-for="Numero" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="EditalTipo" class="control-label"></label>
+                <input asp-for="EditalTipo" class="form-control" />
+                <span asp-validation-for="EditalTipo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="LinkPublico" class="control-label"></label>
                 <input asp-for="LinkPublico" class="form-control" />
                 <span asp-validation-for="LinkPublico" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DataPublicacao" class="control-label"></label>
-                <input asp-for="DataPublicacao" class="form-control" />
-                <span asp-validation-for="DataPublicacao" class="text-danger"></span>
+                <label asp-for="DataEdital" class="control-label"></label>
+                <input asp-for="DataEdital" class="form-control" />
+                <span asp-validation-for="DataEdital" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ContratoId" class="control-label"></label>
@@ -41,7 +46,7 @@
 </div>
 
 <div>
-    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

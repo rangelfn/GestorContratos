@@ -56,7 +56,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("EditalId,Numero,LinkPublico,DataPublicacao,ContratoId")] Edital edital)
+        public async Task<IActionResult> Create([Bind("EditalId,Numero,EditalTipo,LinkPublico,DataEdital,ContratoId")] Edital edital)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("EditalId,Numero,LinkPublico,DataPublicacao,ContratoId")] Edital edital)
+        public async Task<IActionResult> Edit(int id, [Bind("EditalId,Numero,EditalTipo,LinkPublico,DataEdital,ContratoId")] Edital edital)
         {
             if (id != edital.EditalId)
             {

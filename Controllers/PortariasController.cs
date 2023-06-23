@@ -56,7 +56,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("PortariaId,Numero,ProtocoloDiof,UnidadeGestora,DataPublicacao,ContratoId")] Portaria portaria)
+        public async Task<IActionResult> Create([Bind("PortariaId,Numero,ProtocoloDiof,UnidadeGestora,Tipo,DataPublicacao,ContratoId")] Portaria portaria)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("PortariaId,Numero,ProtocoloDiof,UnidadeGestora,DataPublicacao,ContratoId")] Portaria portaria)
+        public async Task<IActionResult> Edit(int id, [Bind("PortariaId,Numero,ProtocoloDiof,UnidadeGestora,Tipo,DataPublicacao,ContratoId")] Portaria portaria)
         {
             if (id != portaria.PortariaId)
             {

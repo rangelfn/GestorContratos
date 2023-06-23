@@ -1,14 +1,17 @@
 USE GestorContratos
-
--- View: Contratos com Detalhes de Editais
-CREATE VIEW vwContratosEditais
+-------------------------------
+-- View: Editais por contratos
+-------------------------------
+CREATE VIEW ViewEditaisPorContratos
 AS
-SELECT c.*, e.Numero AS EditalNumero, e.LinkPublico AS EditalLink, e.DataPublicacao AS EditalDataPublicacao
-FROM Contratos c
-LEFT JOIN Editais e ON c.ContratoID = e.ContratoID;
+SELECT C.UnidadeGestora, c.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       E.Numero, E.EditalTipo, E.DataEdital
+FROM Contratos C
+INNER JOIN Editais E ON C.ContratoID = E.ContratoID;
 
-
--- View: Contratos com Detalhes de Pagamentos
+---------------------------------
+-- View: Pagamentos por contratos
+----------------------------------
 CREATE VIEW vwContratosPagamentos AS
 SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia,
        c.DataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade,
@@ -19,40 +22,69 @@ FROM Contratos c
 JOIN PagamentosTipo pt ON c.ContratoID = pt.ContratoID
 JOIN Pagamentos p ON pt.PagamentoID = p.PagamentoID;
 
+---------------------------------------------
+-- View: Contratos com Detalhes de Pagamentos
+---------------------------------------------
 
--- View: Contratos com Valor Total de Pagamentos
-CREATE VIEW vwContratosValorTotalPagamentos
+CREATE VIEW ViewContratosPagamentos
 AS
-SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia, c.DataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade, c.Valor,
-       ISNULL(SUM(p.Valor), 0) AS ValorTotalPagamentos
-FROM Contratos c
-LEFT JOIN PagamentosTipo pt ON c.ContratoID = pt.ContratoID
-LEFT JOIN Pagamentos p ON pt.PagamentoID = p.PagamentoID
-GROUP BY c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia, c.DataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade, c.Valor;
+SELECT C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       P.NotaLancamento, P.PreparacaoPagamento, P.OrdemBancaria, P.DataPagamento, P.Valor AS ValorPagamento,
+       PT.NotaEmpenho, PT.Tipo
+FROM Contratos C
+INNER JOIN PagamentosTipo PT ON C.ContratoID = PT.ContratoID
+INNER JOIN Pagamentos P ON PT.PagamentoID = P.PagamentoID;
 
 
--- View: Contratos com Detalhes de Despesas
-CREATE VIEW vwContratosDespesas
+-------------------------------------------------
+-- View: Valor Total de Pagamentos por contratos
+-------------------------------------------------
+
+CREATE VIEW ViewPagamentosTotalPorContrato
 AS
-SELECT c.*, d.Programa, d.Acao, d.Fonte, d.Natureza, d.Elemento
-FROM Contratos c
-LEFT JOIN Despesas d ON c.ContratoID = d.ContratoID;
+SELECT C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       STRING_AGG(P.NotaLancamento, ', ') AS NotasLancamento, 
+       SUM(P.Valor) AS ValorTotalPagamentos
+FROM Contratos C
+INNER JOIN PagamentosTipo PT ON C.ContratoID = PT.ContratoID
+INNER JOIN Pagamentos P ON PT.PagamentoID = P.PagamentoID
+GROUP BY C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor;
 
 
--- View: Contratos com Informações de Portarias
-CREATE VIEW vwContratosPortarias
+---------------------------------------------
+-- View: Despesas Orçamentaria por contratos
+---------------------------------------------
+CREATE VIEW vwDespesasPorContratos
 AS
-SELECT c.*, p.Numero AS PortariaNumero, p.ProtocoloDiof AS PortariaProtocolo, p.UnidadeGestora AS PortariaUnidadeGestora, p.DataPublicacao AS PortariaDataPublicacao
-FROM Contratos c
-LEFT JOIN Portarias p ON c.ContratoID = p.ContratoID;
+SELECT C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       D.Programa, D.Acao, D.Fonte, D.Natureza, D.Elemento
+FROM Contratos C
+INNER JOIN DespesasOrcamentaria D ON C.ContratoID = D.ContratoID;
 
 
--- View: Contratos com Informações de Pessoas
-CREATE VIEW vwContratosPessoas
+---------------------------------
+-- View: Portarias por contratos
+---------------------------------
+
+CREATE VIEW vwPortariasPorContratos
 AS
-SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia, c.DataInicio AS ContratoDataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade, c.Valor,
-       p.Matricula, p.Nome, p.CPF, p.UG AS PessoaUG, p.Setor, p.DataInicio AS PessoaDataInicio, p.DataFim
-FROM Contratos c
-LEFT JOIN UsuariosContratos cu ON c.ContratoID = cu.ContratoID
-LEFT JOIN Usuarios u ON cu.UsuarioID = u.UsuarioID
-LEFT JOIN Pessoas p ON u.LoginCPF = p.CPF;
+SELECT C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       P.Numero, P.ProtocoloDiof, P.DataPublicacao
+FROM Contratos C
+INNER JOIN Portarias P ON C.ContratoID = P.ContratoID;
+
+
+---------------------------------
+-- View: Pessoas por Contratos
+---------------------------------
+CREATE VIEW vwPessoasPorContratos
+AS
+SELECT C.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,
+       PE.Matricula, PE.Nome,
+       PP.FuncaoPessoa, PP.TipoPortaria
+FROM Contratos C
+INNER JOIN Portarias P ON C.ContratoID = P.ContratoID
+INNER JOIN PessoasPortarias PP ON P.PortariaID = PP.PortariaID
+INNER JOIN Pessoas PE ON PP.PessoaID = PE.PessoaID;
+
+

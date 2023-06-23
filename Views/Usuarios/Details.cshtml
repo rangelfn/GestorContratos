@@ -17,6 +17,12 @@
             @Html.DisplayFor(model => model.LoginCpf)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Email)
         </dt>
         <dd class = "col-sm-10">
@@ -32,5 +38,5 @@
 </div>
 <div>
     <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model?.UsuarioId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
-    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index">Back to List</a>
 </div>

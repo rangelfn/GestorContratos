@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj": {}
+    "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj": {}
   },
   "projects": {
-    "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj": {
+    "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
+        "projectUniqueName": "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj",
         "projectName": "GestorContratos",
-        "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos.csproj",
+        "projectPath": "C:\\00Projetos\\GestorContratos\\GestorContratos\\GestorContratos.csproj",
         "packagesPath": "C:\\Users\\Nepomuceno\\.nuget\\packages\\",
-        "outputPath": "C:\\00Projetos\\GestorContratos\\obj\\",
+        "outputPath": "C:\\00Projetos\\GestorContratos\\GestorContratos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nepomuceno\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,21 +45,21 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.8, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.17.2, )"
+              "version": "[1.18.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

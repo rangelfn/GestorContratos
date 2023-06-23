@@ -1,0 +1,65 @@
+﻿@model IEnumerable<GestorContratos.Models.Pagamento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Cadastrar</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NotaLancamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PreparacaoPagamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrdemBancaria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataPagamento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Parcela)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NotaLancamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PreparacaoPagamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrdemBancaria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataPagamento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parcela)
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.PagamentoId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
+                <a asp-action="Details" class="btn btn-success" asp-route-id="@item.PagamentoId"title="Detalhar"><i class="fas fa-file-alt mr-2"></i></a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.PagamentoId"title="Apagar"><i class="fas fa-trash mr-2"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

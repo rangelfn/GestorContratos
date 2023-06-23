@@ -56,7 +56,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ApostilamentoId,Numero,Descricao,DataInicio,DataFim,Valor,ContratoId")] Apostilamento apostilamento)
+        public async Task<IActionResult> Create([Bind("ApostilamentoId,Numero,Descricao,DataAditivos,Valor,ContratoId")] Apostilamento apostilamento)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace GestorContratos.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ApostilamentoId,Numero,Descricao,DataInicio,DataFim,Valor,ContratoId")] Apostilamento apostilamento)
+        public async Task<IActionResult> Edit(int id, [Bind("ApostilamentoId,Numero,Descricao,DataAditivos,Valor,ContratoId")] Apostilamento apostilamento)
         {
             if (id != apostilamento.ApostilamentoId)
             {

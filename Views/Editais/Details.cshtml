@@ -17,16 +17,22 @@
             @Html.DisplayFor(model => model.Numero)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EditalTipo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EditalTipo)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.LinkPublico)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LinkPublico)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DataPublicacao)
+            @Html.DisplayNameFor(model => model.DataEdital)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DataPublicacao)
+            @Html.DisplayFor(model => model.DataEdital)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Contrato)
@@ -38,5 +44,5 @@
 </div>
 <div>
     <a asp-action="Edit" class="btn btn-primary" asp-route-id="@Model?.EditalId"title="Editar"><i class="fas fa-pen-square mr-2"></i></a>
-    <a asp-action="Index" class="btn btn-primary" title="Voltar"><i class="fa-solid fa-share fa-rotate-180"></i></a>
+    <a asp-action="Index">Back to List</a>
 </div>

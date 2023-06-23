@@ -18,14 +18,14 @@ namespace GestorContratos.Controllers
             _context = context;
         }
 
-        // GET: UsuariosContratos
+        // GET: UsuariosContratoes
         public async Task<IActionResult> Index()
         {
             var gestorContratosContext = _context.UsuariosContratos.Include(u => u.Contrato).Include(u => u.Usuario);
             return View(await gestorContratosContext.ToListAsync());
         }
 
-        // GET: UsuariosContratos/Details/5
+        // GET: UsuariosContratoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.UsuariosContratos == null)
@@ -45,7 +45,7 @@ namespace GestorContratos.Controllers
             return View(usuariosContrato);
         }
 
-        // GET: UsuariosContratos/Create
+        // GET: UsuariosContratoes/Create
         public IActionResult Create()
         {
             ViewData["ContratoId"] = new SelectList(_context.Contratos, "ContratoId", "ContratoId");
@@ -53,7 +53,7 @@ namespace GestorContratos.Controllers
             return View();
         }
 
-        // POST: UsuariosContratos/Create
+        // POST: UsuariosContratoes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -71,7 +71,7 @@ namespace GestorContratos.Controllers
             return View(usuariosContrato);
         }
 
-        // GET: UsuariosContratos/Edit/5
+        // GET: UsuariosContratoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.UsuariosContratos == null)
@@ -89,7 +89,7 @@ namespace GestorContratos.Controllers
             return View(usuariosContrato);
         }
 
-        // POST: UsuariosContratos/Edit/5
+        // POST: UsuariosContratoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -126,7 +126,7 @@ namespace GestorContratos.Controllers
             return View(usuariosContrato);
         }
 
-        // GET: UsuariosContratos/Delete/5
+        // GET: UsuariosContratoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.UsuariosContratos == null)
@@ -146,7 +146,7 @@ namespace GestorContratos.Controllers
             return View(usuariosContrato);
         }
 
-        // POST: UsuariosContratos/Delete/5
+        // POST: UsuariosContratoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

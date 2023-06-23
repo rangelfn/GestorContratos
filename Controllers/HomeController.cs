@@ -22,14 +22,10 @@ namespace GestorContratos.Controllers
         {
             return View();
         }
-        public IActionResult Contratos()
-        {
-            return RedirectToAction("Index", "Contratos");
 
-        }
-        public IActionResult Editais()
+        public IActionResult Aditivos()
         {
-            return RedirectToAction("Index", "Editais");
+            return RedirectToAction("Index", "Aditivos");
 
         }
         public IActionResult Apostilamentos()
@@ -37,9 +33,54 @@ namespace GestorContratos.Controllers
             return RedirectToAction("Index", "Apostilamentos");
 
         }
-        public IActionResult Aditivos()
+        public IActionResult Contratos()
         {
-            return RedirectToAction("Index", "Aditivos");
+            return RedirectToAction("Index", "Contratos");
+
+        }
+        public IActionResult DespesasOrcamentarias()
+        {
+            return RedirectToAction("Index", "DespesasOrcamentarias");
+
+        }
+        public IActionResult Editais()
+        {
+            return RedirectToAction("Index", "Editais");
+
+        }
+        public IActionResult Pagamentos()
+        {
+            return RedirectToAction("Index", "Pagamentos");
+
+        }
+        public IActionResult PagamentosTipos()
+        {
+            return RedirectToAction("Index", "PagamentosTipos");
+
+        }
+        public IActionResult Pessoas()
+        {
+            return RedirectToAction("Index", "Pessoas");
+
+        }
+        public IActionResult PessoasPortarias()
+        {
+            return RedirectToAction("Index", "PessoasPortarias");
+
+        }
+        public IActionResult Portarias()
+        {
+            return RedirectToAction("Index", "Portarias");
+
+        }
+        public IActionResult UsuariosContratos()
+        {
+            return RedirectToAction("Index", "UsuariosContratos");
+
+        }
+        public IActionResult Usuarios()
+        {
+            return RedirectToAction("Index", "Usuarios");
 
         }
 

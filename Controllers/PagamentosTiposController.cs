@@ -18,14 +18,14 @@ namespace GestorContratos.Controllers
             _context = context;
         }
 
-        // GET: PagamentosTipos
+        // GET: PagamentosTipoes
         public async Task<IActionResult> Index()
         {
             var gestorContratosContext = _context.PagamentosTipos.Include(p => p.Contrato).Include(p => p.Pagamento);
             return View(await gestorContratosContext.ToListAsync());
         }
 
-        // GET: PagamentosTipos/Details/5
+        // GET: PagamentosTipoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.PagamentosTipos == null)
@@ -36,7 +36,7 @@ namespace GestorContratos.Controllers
             var pagamentosTipo = await _context.PagamentosTipos
                 .Include(p => p.Contrato)
                 .Include(p => p.Pagamento)
-                .FirstOrDefaultAsync(m => m.NotaEmpenho == id);
+                .FirstOrDefaultAsync(m => m.PagamentosTipo1 == id);
             if (pagamentosTipo == null)
             {
                 return NotFound();
@@ -45,7 +45,7 @@ namespace GestorContratos.Controllers
             return View(pagamentosTipo);
         }
 
-        // GET: PagamentosTipos/Create
+        // GET: PagamentosTipoes/Create
         public IActionResult Create()
         {
             ViewData["ContratoId"] = new SelectList(_context.Contratos, "ContratoId", "ContratoId");
@@ -53,12 +53,12 @@ namespace GestorContratos.Controllers
             return View();
         }
 
-        // POST: PagamentosTipos/Create
+        // POST: PagamentosTipoes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
+        public async Task<IActionResult> Create([Bind("PagamentosTipo1,NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
         {
             if (ModelState.IsValid)
             {
@@ -71,7 +71,7 @@ namespace GestorContratos.Controllers
             return View(pagamentosTipo);
         }
 
-        // GET: PagamentosTipos/Edit/5
+        // GET: PagamentosTipoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.PagamentosTipos == null)
@@ -89,14 +89,14 @@ namespace GestorContratos.Controllers
             return View(pagamentosTipo);
         }
 
-        // POST: PagamentosTipos/Edit/5
+        // POST: PagamentosTipoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
+        public async Task<IActionResult> Edit(int id, [Bind("PagamentosTipo1,NotaEmpenho,Tipo,DataCadastro,ContratoId,PagamentoId")] PagamentosTipo pagamentosTipo)
         {
-            if (id != pagamentosTipo.NotaEmpenho)
+            if (id != pagamentosTipo.PagamentosTipo1)
             {
                 return NotFound();
             }
@@ -110,7 +110,7 @@ namespace GestorContratos.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PagamentosTipoExists(pagamentosTipo.NotaEmpenho))
+                    if (!PagamentosTipoExists(pagamentosTipo.PagamentosTipo1))
                     {
                         return NotFound();
                     }
@@ -126,7 +126,7 @@ namespace GestorContratos.Controllers
             return View(pagamentosTipo);
         }
 
-        // GET: PagamentosTipos/Delete/5
+        // GET: PagamentosTipoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.PagamentosTipos == null)
@@ -137,7 +137,7 @@ namespace GestorContratos.Controllers
             var pagamentosTipo = await _context.PagamentosTipos
                 .Include(p => p.Contrato)
                 .Include(p => p.Pagamento)
-                .FirstOrDefaultAsync(m => m.NotaEmpenho == id);
+                .FirstOrDefaultAsync(m => m.PagamentosTipo1 == id);
             if (pagamentosTipo == null)
             {
                 return NotFound();
@@ -146,7 +146,7 @@ namespace GestorContratos.Controllers
             return View(pagamentosTipo);
         }
 
-        // POST: PagamentosTipos/Delete/5
+        // POST: PagamentosTipoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -167,7 +167,7 @@ namespace GestorContratos.Controllers
 
         private bool PagamentosTipoExists(int id)
         {
-          return (_context.PagamentosTipos?.Any(e => e.NotaEmpenho == id)).GetValueOrDefault();
+          return (_context.PagamentosTipos?.Any(e => e.PagamentosTipo1 == id)).GetValueOrDefault();
         }
     }
 }
