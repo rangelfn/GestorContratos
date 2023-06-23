@@ -19,5 +19,4 @@ public partial class PagamentosTipo
 
     public virtual Contrato? Contrato { get; set; }
 
-    public virtual Pagamento? Pagamento { get; set; }
 }

@@ -18,14 +18,14 @@ namespace GestorContratos.Controllers
             _context = context;
         }
 
-        // GET: Aditivoes
+        // GET: Aditivos
         public async Task<IActionResult> Index()
         {
             var gestorContratosContext = _context.Aditivos.Include(a => a.Contrato);
             return View(await gestorContratosContext.ToListAsync());
         }
 
-        // GET: Aditivoes/Details/5
+        // GET: Aditivos/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Aditivos == null)
@@ -44,14 +44,14 @@ namespace GestorContratos.Controllers
             return View(aditivo);
         }
 
-        // GET: Aditivoes/Create
+        // GET: Aditivos/Create
         public IActionResult Create()
         {
             ViewData["ContratoId"] = new SelectList(_context.Contratos, "ContratoId", "ContratoId");
             return View();
         }
 
-        // POST: Aditivoes/Create
+        // POST: Aditivos/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -68,7 +68,7 @@ namespace GestorContratos.Controllers
             return View(aditivo);
         }
 
-        // GET: Aditivoes/Edit/5
+        // GET: Aditivos/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.Aditivos == null)
@@ -85,7 +85,7 @@ namespace GestorContratos.Controllers
             return View(aditivo);
         }
 
-        // POST: Aditivoes/Edit/5
+        // POST: Aditivos/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -121,7 +121,7 @@ namespace GestorContratos.Controllers
             return View(aditivo);
         }
 
-        // GET: Aditivoes/Delete/5
+        // GET: Aditivos/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Aditivos == null)
@@ -140,7 +140,7 @@ namespace GestorContratos.Controllers
             return View(aditivo);
         }
 
-        // POST: Aditivoes/Delete/5
+        // POST: Aditivos/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

@@ -55,6 +55,16 @@ CREATE TABLE Apostilamentos (
   FOREIGN KEY (ContratoID) REFERENCES Contratos (ContratoID) ON DELETE CASCADE
 );
 
+-- Criação da tabela PagamentoTipo
+CREATE TABLE PagamentosTipo (
+  PgtTipoID INT PRIMARY KEY IDENTITY,
+  NotaEmpenho VARCHAR (255) NOT NULL,
+  Tipo VARCHAR(255) NOT NULL,
+  DataCadastro DATE NOT NULL,
+  ContratoID INT,
+  FOREIGN KEY (ContratoID) REFERENCES Contratos (ContratoID) ON DELETE CASCADE
+);
+
 -- Criação da tabela Pagamentos
 CREATE TABLE Pagamentos (
   PagamentoID INT PRIMARY KEY IDENTITY,
@@ -64,18 +74,8 @@ CREATE TABLE Pagamentos (
   Valor DECIMAL(10, 2) NOT NULL,
   DataPagamento DATE NOT NULL,
   Parcela VARCHAR(10) NOT NULL
-);
-
--- Criação da tabela PagamentoTipo
-CREATE TABLE PagamentosTipo (
-  PagamentosTipo INT PRIMARY KEY IDENTITY,
-  NotaEmpenho VARCHAR (255) NOT NULL,
-  Tipo VARCHAR(255) NOT NULL,
-  DataCadastro DATE NOT NULL,
-  ContratoID INT,
-  FOREIGN KEY (ContratoID) REFERENCES Contratos (ContratoID) ON DELETE CASCADE,
-  PagamentoID INT,
-  FOREIGN KEY (PagamentoID) REFERENCES Pagamentos (PagamentoID) ON DELETE CASCADE 
+  PgtTipoID INT,
+  FOREIGN KEY (PgtTipoID) REFERENCES PagamentosTipo (PgtTipoID) ON DELETE CASCADE
 );
 
 -- Criação da tabela Despesa com restrição CHECK nos campos "Fonte, Natureza e Elemento" utilizando a expressão regular
