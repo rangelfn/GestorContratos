@@ -13,10 +13,9 @@
 -
 # Passo 2: Configurar o arquivo appsettings.json (acrecentar as seguintes linhas)
 
-- "ConnectionStrings": {
--   "DefaultConnection": "Data Source=localhost;Initial Catalog=GestorContratos;Integrated Security=True;TrustServerCertific`ate=True;"
-- }
--
+<br> "ConnectionStrings": {
+<br>   "DefaultConnection": "Data Source=localhost;Initial Catalog=GestorContratos;Integrated Security=True;TrustServerCertific`ate=True;"
+<br> }
 
 # Passo 3: Configurar o arquivo Program.cs para ler o arquivo appsettings.json 
 - (acrecentar as seguintes linhas depois da linha
