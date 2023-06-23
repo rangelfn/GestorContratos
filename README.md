@@ -9,7 +9,7 @@
 # Passo 1: Instalar os pacotes Microsoft EF para habilitar as ferramentas de scaffolding.
 - Install-Package Microsoft.EntityFrameworkCore.SqlServer
 - Install-Package Microsoft.EntityFrameworkCore.Design
-- Install-Package Microsoft.EntityFrameworkCore.Toolsa
+- Install-Package Microsoft.EntityFrameworkCore.Tools
 - Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
 <br>
 
