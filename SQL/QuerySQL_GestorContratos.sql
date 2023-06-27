@@ -73,7 +73,7 @@ CREATE TABLE Pagamentos (
   OrdemBancaria VARCHAR(255) NOT NULL,
   Valor DECIMAL(10, 2) NOT NULL,
   DataPagamento DATE NOT NULL,
-  Parcela VARCHAR(10) NOT NULL
+  Parcela VARCHAR(10) NOT NULL,
   PgtTipoID INT,
   FOREIGN KEY (PgtTipoID) REFERENCES PagamentosTipo (PgtTipoID) ON DELETE CASCADE
 );

@@ -361,3 +361,19 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+obj/project.nuget.cache
+obj/GestorContratos.csproj.nuget.dgspec.json
+obj/Debug/net7.0/staticwebassets.pack.json
+*.json
+obj/Debug/net7.0/refint/GestorContratos.dll
+obj/Debug/net7.0/GestorContratos.csproj.FileListAbsolute.txt
+obj/Debug/net7.0/GestorContratos.dll
+obj/Debug/net7.0/GestorContratos.genruntimeconfig.cache
+obj/Debug/net7.0/GestorContratos.pdb
+obj/Debug/net7.0/project.razor.vs.json
+obj/Debug/net7.0/ref/GestorContratos.dll
+obj/Debug/net7.0/refint/GestorContratos.dll
+obj/Debug/net7.0/staticwebassets.build.json
+obj/Debug/net7.0/staticwebassets.development.json
+obj/Debug/net7.0/staticwebassets.pack.json
+obj/GestorContratos.csproj.nuget.dgspec.json

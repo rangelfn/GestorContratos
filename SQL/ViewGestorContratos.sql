@@ -13,9 +13,8 @@ INNER JOIN Editais E ON C.ContratoID = E.ContratoID;
 -- View: Pagamentos por contratos
 ----------------------------------
 CREATE VIEW vwContratosPagamentos AS
-SELECT c.ContratoID, c.UnidadeGestora, c.Extrato, c.Contratante, c.Contratada, c.Objeto, c.Vigencia,
-       c.DataInicio, c.ProcessoSei, c.LinkPublico, c.DataAssinatura, c.ProtocoloDiof, c.Modalidade,
-       c.Valor, pt.NotaEmpenho, pt.Tipo AS ModalidadePagamento, pt.DataCadastro,
+SELECTC.UnidadeGestora, C.ProcessoSei, C.Contratada, C.Objeto, C.Modalidade, C.Valor,,
+       pt.NotaEmpenho, pt.Tipo AS ModalidadePagamento, pt.DataCadastro,
        p.NotaLancamento, p.PreparacaoPagamento, p.OrdemBancaria, p.Valor AS ValorPagamento,
        p.DataPagamento, p.Parcela
 FROM Contratos c

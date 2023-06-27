@@ -21,7 +21,7 @@ namespace GestorContratos.Controllers
         // GET: PagamentosTipos
         public async Task<IActionResult> Index()
         {
-            var gestorContratosContext = _context.PagamentosTipos.Include(p => p.Contrato).Include(p => p.Pagamento);
+            var gestorContratosContext = _context.PagamentosTipos.Include(p => p.Contrato);
             return View(await gestorContratosContext.ToListAsync());
         }
 
@@ -35,7 +35,6 @@ namespace GestorContratos.Controllers
 
             var pagamentosTipo = await _context.PagamentosTipos
                 .Include(p => p.Contrato)
-                .Include(p => p.Pagamento)
                 .FirstOrDefaultAsync(m => m.PagamentosTipo1 == id);
             if (pagamentosTipo == null)
             {
@@ -136,7 +135,6 @@ namespace GestorContratos.Controllers
 
             var pagamentosTipo = await _context.PagamentosTipos
                 .Include(p => p.Contrato)
-                .Include(p => p.Pagamento)
                 .FirstOrDefaultAsync(m => m.PagamentosTipo1 == id);
             if (pagamentosTipo == null)
             {
