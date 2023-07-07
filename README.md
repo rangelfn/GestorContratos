@@ -35,4 +35,3 @@
 # Fonte:
 - https://learn.microsoft.com/pt-pt/ef/core/what-is-new/ef-core-7.0/whatsnew	
 - https://learn.microsoft.com/pt-pt/ef/core/managing-schemas/scaffolding/?tabs=dotnet-core-cli#prerequisites
-
